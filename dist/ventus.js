@@ -1110,8 +1110,7 @@ define('ventus/tpl/window', ['handlebars'], function (Handlebars) {
             '>= 2.0.0-beta.1'
         ],
         'main': function (depth0, helpers, partials, data) {
-            var helper, functionType = 'function', helperMissing = helpers.helperMissing, escapeExpression = this.escapeExpression;
-            return '<div class="wm-window ' + escapeExpression((helper = (helper = helpers.classname || (depth0 != null ? depth0.classname : depth0)) != null ? helper : helperMissing, typeof helper === functionType ? helper.call(depth0, {
+             return '<div class="wm-window ' + escapeExpression((helper = (helper = helpers.classname || (depth0 != null ? depth0.classname : depth0)) != null ? helper : helperMissing, typeof helper === functionType ? helper.call(depth0, {
                 'name': 'classname',
                 'hash': {},
                 'data': data
@@ -2583,4 +2582,4 @@ define('src/main', [
 
     return require('ventus');
 }));
-
+
